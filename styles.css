@@ -57,3 +57,65 @@ body{
     0px 3px 10px -2px #31C2BB;
     border-radius: 24px;
 }
+
+.registrations{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.registrations-title{
+    width: 100%;
+    font-size: 55px;
+    font-weight: 700;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.registrations-container{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.registrations-container-card{
+    width: 500px;
+    height: 210px;
+    border: 1px solid black;
+    display: flex;
+}
+
+.registrations-container-card-left{
+    width: 70%;
+    padding: 20px;
+}
+
+.registrations-container-card-right{
+    width: 30%;
+    border-left: 2px dashed white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.registrations-container-card-right-barcode{
+    width: 80px;
+    height: 160px;
+    padding: 10px 20px 10px 10px;
+    border: 1px solid black;
+}
+
+.registrations-container-card-right::after{
+    content: "Two Day Pass";
+    line-height: 0;
+    position: absolute;
+    right: 10px;
+    bottom: 155px;
+    transform: rotate(-90deg);
+    transform-origin: bottom right;
+}
