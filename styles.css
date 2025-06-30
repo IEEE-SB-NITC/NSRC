@@ -58,17 +58,18 @@ body{
 
 .registrations{
     width: 90%;
-    margin: auto;
+    margin: 100px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 60px;
 }
 
 .registrations-title{
     width: 100%;
-    font-size: 55px;
+    font-size: 40px;
     font-weight: 700;
+    line-height: 0;
     text-align: center;
     color: #FFFFFF;
 }
@@ -78,7 +79,7 @@ body{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 60px;
 }
 
 .registrations-container-card{
@@ -89,22 +90,32 @@ body{
 
 .registrations-container-card-left{
     width: 70%;
-    padding: 20px;
+    padding: 40px 20px 60px 20px;
     background: linear-gradient(180deg, #9FE7F5 0%, #012F43 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     clip-path: polygon(
         0% 0%, 95% 0%, 100% 10%, 100% 90%, 95% 100%, 0% 100%
     );
 }
 
-.registrations-container-card-left-price{
-    color: #FFFFFF;
-    font-size: 50px;
-    font-weight: 700;
+.registrations-container-card-left-top{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.registrations-container-card-left-subtitle{
+.registrations-container-card-left-top-price{
     color: #FFFFFF;
-    font-size: 20px;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 0.5em;
+}
+
+.registrations-container-card-left-top-subtitle{
+    color: #FFFFFF;
+    font-size: 15px;
     font-weight: 400;
 }
 
@@ -153,12 +164,12 @@ body{
 .registrations-container-card-right::after{
     content: "Two Day Pass";
     color: #E87722;
-    font-size: 17px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 0;
     position: absolute;
     right: 12px;
-    bottom: 158px;
+    bottom: 152px;
     transform: rotate(-90deg);
     transform-origin: bottom right;
 }
