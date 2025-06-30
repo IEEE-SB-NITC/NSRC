@@ -85,22 +85,63 @@ body{
 .registrations-container-card{
     width: 500px;
     height: 210px;
-    border: 1px solid black;
     display: flex;
 }
 
 .registrations-container-card-left{
     width: 70%;
     padding: 20px;
+    background: linear-gradient(180deg, #9FE7F5 0%, #012F43 100%);
+    clip-path: polygon(
+        0% 0%, 95% 0%, 100% 10%, 100% 90%, 95% 100%, 0% 100%
+    );
+}
+
+.registrations-container-card-left-price{
+    color: #FFFFFF;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.registrations-container-card-left-subtitle{
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.registrations-container-card-left-button{
+    width: 164px;
+    height: 37px;
+    color: #FFFFFF;
+    background: linear-gradient(236.27deg, #EFECFA -2.33%, #E87722 58.01%),
+    linear-gradient(150.72deg, rgba(232, 119, 34, 0.2) 44.43%, rgba(255, 110, 0, 0.08) 78.48%),
+    radial-gradient(46.92% 80.91% at 82.31% 11.62%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+    font-family: "Risque", serif;
+    font-size: 20px;
+    font-weight: 400;
+    border: 1px solid #E87722;
+    border-radius: 24px;
+    box-shadow: 0px 19px 8.7px -2px #E87722,
+    0px 34px 24px -10px #E87722,
+    0px 14px 0px 3px #FF6E0066,
+    0px 11px 0px 3px #FFFFFF99,
+    0px 10px 0px 3px #E87722,
+    0px 8px 0px 1px #E87722,
+    0px 9px 10px -2px #FF6E0066,
+    0px 3px 0px -2px #E87722;
 }
 
 .registrations-container-card-right{
     width: 30%;
-    border-left: 2px dashed white;
+    background-color: #7597A0;
+    border-left: 3px dashed white;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    clip-path: polygon(
+        15% 0%, 100% 0%, 100% 100%, 15% 100%, 0% 90%, 0% 10%
+    );
 }
 
 .registrations-container-card-right-barcode{
@@ -112,10 +153,13 @@ body{
 
 .registrations-container-card-right::after{
     content: "Two Day Pass";
+    color: #E87722;
+    font-size: 17px;
+    font-weight: 400;
     line-height: 0;
     position: absolute;
-    right: 10px;
-    bottom: 155px;
+    right: 12px;
+    bottom: 158px;
     transform: rotate(-90deg);
     transform-origin: bottom right;
 }
