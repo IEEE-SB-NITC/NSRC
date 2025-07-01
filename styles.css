@@ -135,7 +135,7 @@ body{
 
 .registrations-container-card-left{
     width: 70%;
-    padding: 40px 20px 60px 20px;
+    padding: 40px 20px 50px 20px;
     background: linear-gradient(180deg, #9FE7F5 0%, #012F43 100%);
     display: flex;
     flex-direction: column;
@@ -168,22 +168,16 @@ body{
     width: 164px;
     height: 37px;
     color: #FFFFFF;
-    background: linear-gradient(236.27deg, #EFECFA -2.33%, #E87722 58.01%),
-    linear-gradient(150.72deg, rgba(232, 119, 34, 0.2) 44.43%, rgba(255, 110, 0, 0.08) 78.48%),
-    radial-gradient(46.92% 80.91% at 82.31% 11.62%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(225deg, #EFECFA 0%, #E87722 30%, #E87722 100%);
     font-family: "Risque", serif;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     border: 1px solid #E87722;
     border-radius: 24px;
-    box-shadow: 0px 19px 8.7px -2px #E87722,
-    0px 34px 24px -10px #E87722,
-    0px 14px 0px 3px #FF6E0066,
-    0px 11px 0px 3px #FFFFFF99,
-    0px 10px 0px 3px #E87722,
-    0px 8px 0px 1px #E87722,
-    0px 9px 10px -2px #FF6E0066,
-    0px 3px 0px -2px #E87722;
+    box-shadow: 0 1px 0 #ffd700,
+                0 6px 0 #e67300,
+                0 7px 0 rgba(235, 242, 250, 0.6),
+                0 10px 15px rgba(255, 136, 0, 0.7);
 }
 
 .registrations-container-card-right{
@@ -225,10 +219,15 @@ body{
         height: 172px;
     }
     .registrations-container-card-left{
-        padding: 36px 18px 54px 18px;
+        padding: 36px 18px 45px 18px;
     }
     .registrations-container-card-left-top-price{
         font-size: 31px;
+    }
+    .registrations-container-card-left-button{
+        width: 148px;
+        height: 33px;
+        font-size: 17px;
     }
     .registrations-container-card-right-barcode{
         width: 72px;
@@ -246,13 +245,18 @@ body{
         height: 152px;
     }
     .registrations-container-card-left{
-        padding: 32px 16px 48px 16px;
+        padding: 32px 16px 40px 16px;
     }
     .registrations-container-card-left-top-price{
         font-size: 27px;
     }
     .registrations-container-card-left-top-subtitle{
         font-size: 14px;
+    }
+    .registrations-container-card-left-button{
+        width: 131px;
+        height: 29px;
+        font-size: 16px;
     }
     .registrations-container-card-right-barcode{
         width: 64px;
@@ -284,13 +288,18 @@ body{
         height: 190px;
     }
     .registrations-container-card-left{
-        padding: 40px 20px 60px 20px;
+        padding: 40px 20px 50px 20px;
     }
     .registrations-container-card-left-top-price{
         font-size: 31px;
     }
     .registrations-container-card-left-top-subtitle{
         font-size: 15px;
+    }
+    .registrations-container-card-left-button{
+        width: 164px;
+        height: 37px;
+        font-size: 18px;
     }
     .registrations-container-card-right-barcode{
         width: 80px;
@@ -310,7 +319,12 @@ body{
         height: 172px;
     }
     .registrations-container-card-left{
-        padding: 36px 18px 54px 18px;
+        padding: 36px 18px 45px 18px;
+    }
+    .registrations-container-card-left-button{
+        width: 148px;
+        height: 33px;
+        font-size: 17px;
     }
     .registrations-container-card-right-barcode{
         width: 72px;
@@ -328,13 +342,18 @@ body{
         height: 152px;
     }
     .registrations-container-card-left{
-        padding: 32px 16px 48px 16px;
+        padding: 32px 16px 40px 16px;
     }
     .registrations-container-card-left-top-price{
         font-size: 27px;
     }
     .registrations-container-card-left-top-subtitle{
         font-size: 14px;
+    }
+    .registrations-container-card-left-button{
+        width: 131px;
+        height: 29px;
+        font-size: 16px;
     }
     .registrations-container-card-right-barcode{
         width: 64px;
@@ -354,10 +373,15 @@ body{
         height: 133px;
     }
     .registrations-container-card-left{
-        padding: 28px 14px 42px 14px;
+        padding: 24px 14px 30px 14px;
     }
     .registrations-container-card-left-top-price{
         font-size: 24px;
+    }
+    .registrations-container-card-left-button{
+        width: 115px;
+        height: 26px;
+        font-size: 15px;
     }
     .registrations-container-card-right-barcode{
         width: 56px;
