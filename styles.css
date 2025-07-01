@@ -131,6 +131,7 @@ body{
     width: 480px;
     height: 190px;
     display: flex;
+    justify-content: center;
 }
 
 .registrations-container-card-left{
@@ -183,13 +184,26 @@ body{
 .registrations-container-card-right{
     width: 30%;
     background-color: #7597A0;
-    border-left: 3px dashed white;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     clip-path: polygon(
         15% 0%, 100% 0%, 100% 100%, 15% 100%, 0% 90%, 0% 10%
+    );
+}
+
+.registrations-container-card-right-cutline{
+    width: 3px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background-image: repeating-linear-gradient(
+        to bottom,
+        white,
+        white 8px,
+        transparent 8px,
+        transparent 16px
     );
 }
 
@@ -215,7 +229,7 @@ body{
 
 @media (max-width: 1180px){
     .registrations-container-card{
-        width: 432px;
+        width: 433px;
         height: 172px;
     }
     .registrations-container-card-left{
@@ -315,7 +329,7 @@ body{
 
 @media (max-width: 710px){
     .registrations-container-card{
-        width: 432px;
+        width: 433px;
         height: 172px;
     }
     .registrations-container-card-left{
@@ -369,7 +383,7 @@ body{
 
 @media (max-width: 430px){
     .registrations-container-card{
-        width: 336px;
+        width: 335px;
         height: 133px;
     }
     .registrations-container-card-left{
