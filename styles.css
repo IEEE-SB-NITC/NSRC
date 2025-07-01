@@ -12,11 +12,11 @@ body{
 
 .events{
     width: 90%;
-    margin: 100px auto;
+    margin: 180px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 60px;
+    gap: 80px;
 }
 
 .events-title{
@@ -51,13 +51,56 @@ body{
                 0 10px 30px rgba(125, 220, 200, 0.5);
 }
 
+@media (max-width: 1320px){
+    .events-container-card{
+        width: 252px;
+        height: 324px;
+    }
+}
+
+@media (max-width: 1050px){
+    .events-container{
+        width: 95%;
+    }
+}
+
+@media (max-width: 990px){
+    .events-container-card{
+        width: 224px;
+        height: 288px;
+    }
+}
+
+@media (max-width: 910px){
+    .events{
+        margin: 90px auto;
+        gap: 40px;
+    }
+    .events-title{
+        font-size: 33px;
+    }
+    .events-desc{
+        font-size: 15px;
+    }
+    .events-container{
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    .events-container-card{
+        width: 280px;
+        height: 360px;
+    }
+}
+
 .registrations{
     width: 90%;
-    margin: 100px auto;
+    margin: 180px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 60px;
+    gap: 100px;
 }
 
 .registrations-title{
@@ -70,16 +113,17 @@ body{
 }
 
 .registrations-container{
-    width: 90%;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 60px;
+    row-gap: 60px;
+    column-gap: 40px;
 }
 
 .registrations-container-card{
-    width: 500px;
-    height: 210px;
+    width: 480px;
+    height: 190px;
     display: flex;
 }
 
@@ -164,7 +208,136 @@ body{
     line-height: 0;
     position: absolute;
     right: 12px;
-    bottom: 152px;
+    bottom: 142px;
     transform: rotate(-90deg);
     transform-origin: bottom right;
+}
+
+@media (max-width: 1180px){
+    .registrations-container-card{
+        width: 432px;
+        height: 172px;
+    }
+    .registrations-container-card-left{
+        padding: 36px 18px 54px 18px;
+    }
+    .registrations-container-card-left-top-price{
+        font-size: 31px;
+    }
+    .registrations-container-card-right-barcode{
+        width: 72px;
+        height: 144px;
+        padding: 9px 18px 9px 9px;
+    }
+    .registrations-container-card-right::after{
+        bottom: 132px;
+    }
+}
+
+@media (max-width: 1070px){
+    .registrations-container-card{
+        width: 384px;
+        height: 152px;
+    }
+    .registrations-container-card-left{
+        padding: 32px 16px 48px 16px;
+    }
+    .registrations-container-card-left-top-price{
+        font-size: 27px;
+    }
+    .registrations-container-card-left-top-subtitle{
+        font-size: 14px;
+    }
+    .registrations-container-card-right-barcode{
+        width: 64px;
+        height: 128px;
+        padding: 8px 16px 8px 8px;
+    }
+    .registrations-container-card-right::after{
+        font-size: 13px;
+        right: 10px;
+        bottom: 120px;
+    }
+}
+
+@media (max-width: 910px){
+    .registrations{
+        margin: 90px auto;
+        gap: 60px;
+    }
+    .registrations-title{
+        font-size: 33px;
+    }
+    .registrations-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .registrations-container-card{
+        width: 480px;
+        height: 190px;
+    }
+    .registrations-container-card-left{
+        padding: 40px 20px 60px 20px;
+    }
+    .registrations-container-card-left-top-price{
+        font-size: 31px;
+    }
+    .registrations-container-card-left-top-subtitle{
+        font-size: 15px;
+    }
+    .registrations-container-card-right-barcode{
+        width: 80px;
+        height: 160px;
+        padding: 10px 20px 10px 10px;
+    }
+    .registrations-container-card-right::after{
+        font-size: 14px;
+        right: 12px;
+        bottom: 142px;
+    }
+}
+
+@media (max-width: 710px){
+    .registrations-container-card{
+        width: 432px;
+        height: 172px;
+    }
+    .registrations-container-card-left{
+        padding: 36px 18px 54px 18px;
+    }
+    .registrations-container-card-right-barcode{
+        width: 72px;
+        height: 144px;
+        padding: 9px 18px 9px 9px;
+    }
+    .registrations-container-card-right::after{
+        bottom: 132px;
+    }
+}
+
+@media (max-width: 610px){
+    .registrations-container-card{
+        width: 384px;
+        height: 152px;
+    }
+    .registrations-container-card-left{
+        padding: 32px 16px 48px 16px;
+    }
+    .registrations-container-card-left-top-price{
+        font-size: 27px;
+    }
+    .registrations-container-card-left-top-subtitle{
+        font-size: 14px;
+    }
+    .registrations-container-card-right-barcode{
+        width: 64px;
+        height: 128px;
+        padding: 8px 16px 8px 8px;
+    }
+    .registrations-container-card-right::after{
+        font-size: 13px;
+        right: 10px;
+        bottom: 120px;
+    }
 }
