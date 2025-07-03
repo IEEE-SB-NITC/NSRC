@@ -104,9 +104,6 @@ nav li:first-child{
     }
 }
 @media(max-width: 425px){
-    .sidebar{
-        width: 100%;
-    }
     .logo{
         width: 98px;
         height: 32.96942901611328px;
