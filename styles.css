@@ -8,16 +8,17 @@ body{
   background-attachment: fixed;
   background-size: cover;
 }
-/* *{
+*{
     margin:0;
     padding: 0;
 
-} */
+}
 .logo {
   width: 208px;
-  height: 69.96942901611328px;
-  top: 16px;
-  left: 35px;
+  height: 62.96942901611328px;
+  top: 90px;
+  left: 45px;
+  margin-top: 25px;
 }
 nav ul{
     width: 100%;
@@ -94,51 +95,6 @@ nav li:first-child{
 
 }
 
-.title{
-    position: absolute;
-    top:50%;
-    left: 50%;
-    max-width: 650px;
-    transform: translate(-50%,-50%);
-    text-align: center;
-    color: white;
-}
-.title h1{
-    font-family: 'Montserrat',sans-serif;
-    font-weight: 700;
-    font-size: 35px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    text-align: center;
-}
-.title h3{
-    font-family: 'Montserrat',sans-serif;
-    font-weight: 610;
-    font-size: 25px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    text-align: center;
-
-}
-.title h2{
-  font-family: 'Montserrat',sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  text-align: center;
-  color: rgba(232, 119, 34, 1);
-}
-.custom-line {
- width: 405px;
- top: 404px;
- left: 497px;
- border-width: 3px;
- border: none;
- border-top: 3px solid rgb(228, 228, 228); 
- transform: rotate(0deg); 
-}
-
 @media(max-width: 800px){
     .hideOnMobile{
         display: none;
@@ -147,8 +103,68 @@ nav li:first-child{
         display: block;
     }
 }
-@media(max-width: 400px){
+@media(max-width: 425px){
     .sidebar{
         width: 100%;
     }
+    .logo{
+        width: 98px;
+        height: 32.96942901611328px;
+        top: 90px;
+        left: 45px;
+        margin-top: 25px;
+    }
+}
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  padding: 0 20px;
+  color: white;
+}
+.hero-text{
+    font-family: 'Montserrat',serif;
+}
+
+.hero-text h1 {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 23px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  
+}
+
+.hero-text h2 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.date,
+.location {
+  color: #E87722;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 10px;
+}
+.main{
+    width: 588;
+    height: 158;
+    top: 246px;
+    left: 424px;
+}
+.line{
+    width: 446px;
+    height: 2.65px;
+    border: 0 none;
+    margin-left: auto;
+    background-color: white;
+    margin-right: auto;
+    margin-top:20px;
+    margin-bottom: 20px;
 }
