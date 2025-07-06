@@ -7,6 +7,52 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <nav >
+      <ul class="sidebar">
+        <li onclick="hideSidebar()"><a href="#"><img src="close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Close sidebar" viewport="0 96 960960" width="26" height="26"></a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Host</a></li>
+        <li><a href="#"><button class="button">Register Now</button></a></li>
+      </ul>
+      <ul>
+        <li><a href="#"><img class="logo" src="ieeeies.png" alt="ieee logo" /></a></li>
+        <li class="hideOnMobile"><a href="#">Home</a></li>
+        <li class="hideOnMobile"><a href="#">Events</a></li>
+        <li class="hideOnMobile"><a href="#">About</a></li>
+        <li class="hideOnMobile"><a href="#">Host</a></li>
+        <li class="hideOnMobile"><a href="#"><button class="button">Register Now</button></a></li>
+        <li class="menu-button" onclick=showSidebar()><a href="#"><img src="menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Icon" viewport="0 96 960960" width="26" height="26"></a></li>
+      </ul>
+    </nav>
+    <script>
+        function showSidebar(){
+            const sidebar=document.querySelector('.sidebar')
+            sidebar.style.display='flex'
+        }
+        function hideSidebar(){
+            const sidebar=document.querySelector('.sidebar')
+            sidebar.style.display='none'
+        }
+    </script>
+    <div class="hero-section">
+      <div class="hero-text">
+        <div class="main">
+          <h1>National Symposium on<br>Industrial Electronics 2025<br></h1>
+          <h2>IEEE IES SCLA funded event</h2>
+        </div>
+        <div class="line"></div>
+      <p><span class="date">July 20-22</span> <span class="location">| NIT, Calicut</span></p>
+    </div>
+    </div>
+  <section class="ieee-banner">
+    <div class="logo-container">
+      <img src="ieeelink.png" alt="IEEE LINK">
+      <img src="40yr.png" alt="40 Years of IEEE SB NITC">
+      <img src="ieeias.png" alt="IEEE IAS">
+      <img src="ieeepels.png" alt="IEEE PELS">
+      <img src="ieee.png" alt="IEEE Logo">
   <section class="timeline-section">
     <h1 class="timeline-heading">Timeline</h1>
     <div class="timeline-container">
