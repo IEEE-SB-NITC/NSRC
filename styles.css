@@ -401,3 +401,413 @@ body {
     background: linear-gradient(to right, #E87722 24%, #ffffff 20%);
   }
 }
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(104.05deg, #030F19 -2.59%, #0B192C 110.84%);
+}
+
+.events{
+    width: 90%;
+    margin: 180px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+}
+
+.events-title{
+    width: 100%;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 0;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.events-desc{
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    color: #E87722;
+}
+
+.events-container{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.events-container-card{
+    width: 280px;
+    height: 360px;
+    border: 1px solid #7DDCC8;
+    border-radius: 24px;
+    box-shadow: 0 8px 16px rgba(125, 220, 200, 0.8),
+                0 10px 30px rgba(125, 220, 200, 0.5);
+}
+
+@media (max-width: 1320px){
+    .events-container-card{
+        width: 252px;
+        height: 324px;
+    }
+}
+
+@media (max-width: 1050px){
+    .events-container{
+        width: 95%;
+    }
+}
+
+@media (max-width: 990px){
+    .events-container-card{
+        width: 224px;
+        height: 288px;
+    }
+}
+
+@media (max-width: 910px){
+    .events{
+        margin: 90px auto;
+        gap: 40px;
+    }
+    .events-title{
+        font-size: 33px;
+    }
+    .events-desc{
+        font-size: 15px;
+    }
+    .events-container{
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    .events-container-card{
+        width: 280px;
+        height: 360px;
+    }
+}
+
+@media (max-width: 910px){
+    .events-desc{
+        font-size: 14px;
+    }
+}
+
+.registrations{
+    width: 90%;
+    margin: 180px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+
+.registrations-title{
+    width: 100%;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 0;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.registrations-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 60px;
+    column-gap: 40px;
+}
+
+.registrations-container-card{
+    width: 480px;
+    height: 190px;
+    display: flex;
+    justify-content: center;
+}
+
+.registrations-container-card-left{
+    width: 70%;
+    padding: 40px 20px 50px 20px;
+    background: linear-gradient(180deg, #9FE7F5 0%, #012F43 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    clip-path: polygon(
+        0% 0%, 95% 0%, 100% 10%, 100% 90%, 95% 100%, 0% 100%
+    );
+}
+
+.registrations-container-card-left-top{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.registrations-container-card-left-top-price{
+    color: #FFFFFF;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 0.5em;
+}
+
+.registrations-container-card-left-top-subtitle{
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.registrations-container-card-left-button{
+    width: 164px;
+    height: 37px;
+    color: #FFFFFF;
+    background: linear-gradient(225deg, #EFECFA 0%, #E87722 30%, #E87722 100%);
+    font-family: "Risque", serif;
+    font-size: 18px;
+    font-weight: 400;
+    border: 1px solid #E87722;
+    border-radius: 24px;
+    box-shadow: 0 1px 0 #ffd700,
+                0 6px 0 #e67300,
+                0 7px 0 rgba(235, 242, 250, 0.6),
+                0 10px 15px rgba(255, 136, 0, 0.7);
+}
+
+.registrations-container-card-right{
+    width: 30%;
+    background-color: #7597A0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    clip-path: polygon(
+        15% 0%, 100% 0%, 100% 100%, 15% 100%, 0% 90%, 0% 10%
+    );
+}
+
+.registrations-container-card-right-cutline{
+    width: 3px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background-image: repeating-linear-gradient(
+        to bottom,
+        white,
+        white 8px,
+        transparent 8px,
+        transparent 16px
+    );
+}
+
+.registrations-container-card-right-barcode{
+    width: 80px;
+    height: 160px;
+    padding: 10px 20px 10px 10px;
+    border: 1px solid black;
+}
+
+.registrations-container-card-right::after{
+    content: "Two Day Pass";
+    color: #E87722;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 0;
+    position: absolute;
+    right: 12px;
+    bottom: 142px;
+    transform: rotate(-90deg);
+    transform-origin: bottom right;
+}
+
+@media (max-width: 1180px){
+    .registrations-container-card{
+        width: 433px;
+        height: 172px;
+    }
+    .registrations-container-card-left{
+        padding: 36px 18px 45px 18px;
+    }
+    .registrations-container-card-left-top-price{
+        font-size: 31px;
+    }
+    .registrations-container-card-left-button{
+        width: 148px;
+        height: 33px;
+        font-size: 17px;
+    }
+    .registrations-container-card-right-barcode{
+        width: 72px;
+        height: 144px;
+        padding: 9px 18px 9px 9px;
+    }
+    .registrations-container-card-right::after{
+        bottom: 132px;
+    }
+}
+
+@media (max-width: 1070px){
+    .registrations-container-card{
+        width: 384px;
+        height: 152px;
+    }
+    .registrations-container-card-left{
+        padding: 32px 16px 40px 16px;
+    }
+    .registrations-container-card-left-top-price{
+        font-size: 27px;
+    }
+    .registrations-container-card-left-top-subtitle{
+        font-size: 14px;
+    }
+    .registrations-container-card-left-button{
+        width: 131px;
+        height: 29px;
+        font-size: 16px;
+    }
+    .registrations-container-card-right-barcode{
+        width: 64px;
+        height: 128px;
+        padding: 8px 16px 8px 8px;
+    }
+    .registrations-container-card-right::after{
+        font-size: 13px;
+        right: 10px;
+        bottom: 120px;
+    }
+}
+
+@media (max-width: 910px){
+    .registrations{
+        margin: 90px auto;
+        gap: 60px;
+    }
+    .registrations-title{
+        font-size: 33px;
+    }
+    .registrations-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .registrations-container-card{
+        width: 480px;
+        height: 190px;
+    }
+    .registrations-container-card-left{
+        padding: 40px 20px 50px 20px;
+    }
+    .registrations-container-card-left-top-price{
+        font-size: 31px;
+    }
+    .registrations-container-card-left-top-subtitle{
+        font-size: 15px;
+    }
+    .registrations-container-card-left-button{
+        width: 164px;
+        height: 37px;
+        font-size: 18px;
+    }
+    .registrations-container-card-right-barcode{
+        width: 80px;
+        height: 160px;
+        padding: 10px 20px 10px 10px;
+    }
+    .registrations-container-card-right::after{
+        font-size: 14px;
+        right: 12px;
+        bottom: 142px;
+    }
+}
+
+@media (max-width: 710px){
+    .registrations-container-card{
+        width: 433px;
+        height: 172px;
+    }
+    .registrations-container-card-left{
+        padding: 36px 18px 45px 18px;
+    }
+    .registrations-container-card-left-button{
+        width: 148px;
+        height: 33px;
+        font-size: 17px;
+    }
+    .registrations-container-card-right-barcode{
+        width: 72px;
+        height: 144px;
+        padding: 9px 18px 9px 9px;
+    }
+    .registrations-container-card-right::after{
+        bottom: 132px;
+    }
+}
+
+@media (max-width: 610px){
+    .registrations-container-card{
+        width: 384px;
+        height: 152px;
+    }
+    .registrations-container-card-left{
+        padding: 32px 16px 40px 16px;
+    }
+    .registrations-container-card-left-top-price{
+        font-size: 27px;
+    }
+    .registrations-container-card-left-top-subtitle{
+        font-size: 14px;
+    }
+    .registrations-container-card-left-button{
+        width: 131px;
+        height: 29px;
+        font-size: 16px;
+    }
+    .registrations-container-card-right-barcode{
+        width: 64px;
+        height: 128px;
+        padding: 8px 16px 8px 8px;
+    }
+    .registrations-container-card-right::after{
+        font-size: 13px;
+        right: 10px;
+        bottom: 120px;
+    }
+}
+
+@media (max-width: 430px){
+    .registrations-container-card{
+        width: 335px;
+        height: 133px;
+    }
+    .registrations-container-card-left{
+        padding: 24px 14px 30px 14px;
+    }
+    .registrations-container-card-left-top-price{
+        font-size: 24px;
+    }
+    .registrations-container-card-left-button{
+        width: 115px;
+        height: 26px;
+        font-size: 15px;
+    }
+    .registrations-container-card-right-barcode{
+        width: 56px;
+        height: 112px;
+        padding: 7px 14px 7px 7px;
+    }
+    .registrations-container-card-right::after{
+        font-size: 12px;
+        right: 9px;
+        bottom: 106px;
+    }
+}
