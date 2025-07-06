@@ -182,5 +182,78 @@ nav li:first-child{
     height: 1.9px;
 
     }
+}
+body {
+  margin: 0;
+  padding: 0;
+}
 
+.ieee-banner {
+  width: 100%;
+  background-color:rgba(3, 15, 25, 1);
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-container {
+  width: 90%;
+  max-width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.logo-container img {
+  height: 60px;
+  max-width: 100%;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+@media (max-width: 426px) {
+  .logo-container {
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 0px;
+  }
+
+  .logo-container img {
+    height: 30px;
+    max-width: 70px;
+  }
+
+  .ieee-banner {
+    padding: 5px 0;
+  }
+
+    .logo {
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s ease;
+    }
+}
+@media (max-width: 420px) {
+  .ieee-link,
+  .forty-years,
+  .ias,
+  .pels,
+  .ieee-main {
+    height: 30px;
+    max-width: 70px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .logo-container {
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 0px;
+  }
+  .logo-container img {
+    height: 30px;
+    max-width: 70px;
+  }
 }
