@@ -1,3 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Risque&display=swap');
+
+body{
+  background: linear-gradient(180deg, #000000 0%, rgba(5, 18, 30, 0.68) 100%),url('backgroundq.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+*{
+    margin:0;
+    padding: 0;
+
+}
+.logo {
+  width: 208px;
+  height: 62.96942901611328px;
+  top: 90px;
+  left: 45px;
+  margin-top: 25px;
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height: 50px;
+}
+nav a{
+    height: 100%;
+    padding: 0.3rem 1rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width:250px;
+    z-index: 999;
+    background-color: rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+    /* box-shadow: -10px 0 10 px rgba(0,0,0,0.1); */
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+.menu-button{
+    display: none;
+}
+.button{
+    /* width: 164;
+    height: 37;
+    top: 22px; */
+    /* left: 1250px;
+    gap: 10px; */
+    border-radius: 50px;
+    border-width: 0px;
+    padding-top: 12px;
+    padding-right: 50px;
+    padding-bottom: 12px;
+    padding-left: 50px;
+    background: linear-gradient(236.27deg, #EFECFA -2.33%, #E87722 58.01%),
+    linear-gradient(150.72deg, rgba(232, 119, 34, 0.2) 44.43%, rgba(255, 110, 0, 0.08) 78.48%),
+    radial-gradient(46.92% 80.91% at 82.31% 11.62%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    box-shadow: 0px 9px 10px -2px rgba(255, 110, 0, 0.4);
+
+    color: white;
+    font-family: 'Risque', cursive;
+    font-weight: 400;
+    font-size:20px;
+    line-height: 1;      
+
+}
+
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+@media(max-width: 425px){
+    .logo{
+        width: 98px;
+        height: 32.96942901611328px;
+        top: 90px;
+        left: 45px;
+        margin-top: 25px;
+    }
+}
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  padding: 0 20px;
+  color: white;
+}
+.hero-text{
+    font-family: 'Montserrat',serif;
+}
+
+.hero-text h1 {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 23px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  
+}
+
+.hero-text h2 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.date,
+.location {
+  color: #E87722;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 10px;
+}
+.main{
+    width: 588;
+    height: 158;
+    top: 246px;
+    left: 424px;
+}
+.line{
+    width: 446px;
+    height: 2.65px;
+    border: 0 none;
+    margin-left: auto;
+    background-color: white;
+    margin-right: auto;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+@media(max-width:600px){
+    .hero-text h1{
+        font-size:20px
+    }
+    .hero-text h2 {
+    font-size: 14px;
+    margin-bottom: 17.5px;
+    }
+    .date,
+    .location {
+    font-size: 10px;
+    }
+    .line{
+    width: 264px;
+    margin-top:10px;
+    margin-bottom: 8px;
+    height: 1.9px;
+
+    }
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.ieee-banner {
+  width: 100%;
+  background-color:rgba(3, 15, 25, 1);
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-container {
+  width: 90%;
+  max-width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.logo-container img {
+  height: 60px;
+  max-width: 100%;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+@media (max-width: 426px) {
+  .logo-container {
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 0px;
+  }
+
+  .logo-container img {
+    height: 30px;
+    max-width: 70px;
+  }
+
+  .ieee-banner {
+    padding: 5px 0;
+  }
+
+    .logo {
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s ease;
+    }
+}
+@media (max-width: 420px) {
+  .ieee-link,
+  .forty-years,
+  .ias,
+  .pels,
+  .ieee-main {
+    height: 30px;
+    max-width: 70px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .logo-container {
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 0px;
+  }
+  .logo-container img {
+    height: 30px;
+    max-width: 70px;
+  }
+}
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+HR+Lijeva+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #0C111F;
+  color: white;
+  padding: 40px;
+}
+.timeline-section {
+  text-align: center;
+}
+.timeline-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 50px;
+}
+
+.timeline-heading::after {
+  content: "";
+  display: block;
+  width: 320px;
+  height: 2px;
+  background: linear-gradient(to right, #E87722 29%, #ffffff 15%);
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+.timeline-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.timeline-card {
+  background-color: #111828;
+  border-radius: 50px;
+  border:1px;
+  padding: 30px 20px;
+  box-shadow: 0 10px 20px rgba(242, 157, 56, 0.2);
+  border: 1px solid rgba(242, 157, 56, 0.3);
+  transition: transform 0.3s ease;
+  /* box-shadow: 0px 19px 11px -2px rgba(232, 119, 34, 1); */
+  box-shadow: 0px 34px 24px -10px rgba(232, 119, 34, 1);
+  /* box-shadow: 0px 14px 24px 3px rgba(232, 119, 34, 1);  */
+  /* box-shadow: 0px 11px 10px 3px rgba(255, 255, 255, 0.6); */
+  box-shadow: 0px 10px 10px 3px rgba(255, 110, 0, 0.4);
+  /* box-shadow: 0px 8px 10px 1px rgba(232, 119, 34, 1); */
+  /* box-shadow: 0px 9px 10px -2px rgba(232, 119, 34, 1); */
+  /* box-shadow: 0px 3px 10px -2px rgba(232, 119, 34, 1); */
+}
+.timeline-card:hover {
+  transform: translateY(-1px);
+}
+
+.timeline-card .date {
+  color: rgba(232, 119, 34, 1);
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.timeline-card .title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+@media (max-width: 444px){
+  .timeline-heading {
+    font-size: 30px;
+    line-height: 100%;
+    text-align: center;
+    width: auto;
+  }
+  .timeline-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 20px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .timeline-card {
+    width: 140.2px;
+    height: 70px;
+    border-radius: 50px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    background: #111828;
+    border: none;
+    box-shadow: 0px 10px 10px 3px rgba(255, 110, 0, 0.4);
+    margin-left: auto;
+    margin-right: auto;
+  }
+ .timeline-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50px;
+    padding: 1px;
+    background: linear-gradient(180deg, #E87722 0%, rgba(255, 110, 0, 0.6) 100%);
+    
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    
+    mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+
+    z-index: -1;
+  }
+
+  .timeline-card .date {
+    font-size: 9.5px;
+    margin-bottom: 4px;
+    color: rgba(232, 119, 34, 1);
+    font-weight: 500;
+  }
+
+  .timeline-card .title {
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+}
+@media (max-width: 480px) {
+  .timeline-heading::after {
+    width: 202px;
+    height: 1px;
+    background: linear-gradient(to right, #E87722 24%, #ffffff 20%);
+  }
+}
 *{
     padding: 0;
     margin: 0;
