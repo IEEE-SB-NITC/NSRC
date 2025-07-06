@@ -1,3 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Risque&display=swap');
+
+body{
+  background: linear-gradient(180deg, #000000 0%, rgba(5, 18, 30, 0.68) 100%),url('backgroundq.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+*{
+    margin:0;
+    padding: 0;
+
+}
+.logo {
+  width: 208px;
+  height: 62.96942901611328px;
+  top: 90px;
+  left: 45px;
+  margin-top: 25px;
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height: 50px;
+}
+nav a{
+    height: 100%;
+    padding: 0.3rem 1rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width:250px;
+    z-index: 999;
+    background-color: rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+    /* box-shadow: -10px 0 10 px rgba(0,0,0,0.1); */
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+.menu-button{
+    display: none;
+}
+.button{
+    /* width: 164;
+    height: 37;
+    top: 22px; */
+    /* left: 1250px;
+    gap: 10px; */
+    border-radius: 50px;
+    border-width: 0px;
+    padding-top: 12px;
+    padding-right: 50px;
+    padding-bottom: 12px;
+    padding-left: 50px;
+    background: linear-gradient(236.27deg, #EFECFA -2.33%, #E87722 58.01%),
+    linear-gradient(150.72deg, rgba(232, 119, 34, 0.2) 44.43%, rgba(255, 110, 0, 0.08) 78.48%),
+    radial-gradient(46.92% 80.91% at 82.31% 11.62%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    box-shadow: 0px 9px 10px -2px rgba(255, 110, 0, 0.4);
+
+    color: white;
+    font-family: 'Risque', cursive;
+    font-weight: 400;
+    font-size:20px;
+    line-height: 1;      
+
+}
+
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+@media(max-width: 425px){
+    .logo{
+        width: 98px;
+        height: 32.96942901611328px;
+        top: 90px;
+        left: 45px;
+        margin-top: 25px;
+    }
+}
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  padding: 0 20px;
+  color: white;
+}
+.hero-text{
+    font-family: 'Montserrat',serif;
+}
+
+.hero-text h1 {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 23px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  
+}
+
+.hero-text h2 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.date,
+.location {
+  color: #E87722;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 10px;
+}
+.main{
+    width: 588;
+    height: 158;
+    top: 246px;
+    left: 424px;
+}
+.line{
+    width: 446px;
+    height: 2.65px;
+    border: 0 none;
+    margin-left: auto;
+    background-color: white;
+    margin-right: auto;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+@media(max-width:600px){
+    .hero-text h1{
+        font-size:20px
+    }
+    .hero-text h2 {
+    font-size: 14px;
+    margin-bottom: 17.5px;
+    }
+    .date,
+    .location {
+    font-size: 10px;
+    }
+    .line{
+    width: 264px;
+    margin-top:10px;
+    margin-bottom: 8px;
+    height: 1.9px;
+
+    }
+}
 body {
   margin: 0;
   padding: 0;
