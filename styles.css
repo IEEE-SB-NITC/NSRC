@@ -127,9 +127,9 @@ nav li:first-child {
     border-width: 0px;
     border: solid 1px #e87722;
     padding-top: 12px;
-    padding-right: 35px;
+    padding-right: 25px;
     padding-bottom: 12px;
-    padding-left: 35px;
+    padding-left: 25px;
     background: linear-gradient(205deg, #efecfae9 -2%, #e87722 58.01%),
         linear-gradient(
             150.72deg,
@@ -155,7 +155,7 @@ nav li:first-child {
     filter: brightness(0) invert(1);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
     .hideOnMobile {
         display: none;
     }
