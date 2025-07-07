@@ -25,7 +25,7 @@ body {
     font-family: "Poppins", sans-serif;
     background: linear-gradient(104.05deg, #030f19 -2.59%, #0b192c 110.84%);
 }
-* {
+*,p {
     margin: 0;
     padding: 0;
 }
@@ -988,7 +988,7 @@ nav li:first-child {
 .orange-hr {
     opacity: 1;
     width: 90%;
-    height: 4px;
+    height: 1.5px;
     background-color: var(--orange);
     border: none;
     margin-left: 5%;
@@ -1120,4 +1120,28 @@ nav li:first-child {
         font-size: 10px;
         line-height: 16px;
     }
+}
+
+.microsoft-service{
+    padding: 1.5rem;
+    border: solid 1px white;
+    width: 90%;
+    text-align: left;
+    margin: 0 auto;
+    font-size: 1.25rem;
+}
+
+.microsoft-service p{
+    margin-bottom: 1rem;
+}
+
+.microsoft-service input{
+    margin-right: .5rem;
+}
+
+.container.para{
+    max-width: 100%;
+}
+footer{
+    padding: 4rem 0rem 2rem;
 }
