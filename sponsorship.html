@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>NSRC</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Risque&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <nav>
+            <ul class="sidebar">
+                <li onclick="hideSidebar()">
+                    <a href="#"
+                        ><img
+                            src="close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                            alt="Close sidebar"
+                            width="26"
+                            height="26"
+                    /></a>
+                </li>
+                <li><a class="hoverStyle" href="./index.html#home">Home</a></li>
+                <li><a class="hoverStyle" href="./index.html#events">Events</a></li>
+                <li><a class="hoverStyle" href="./index.html#about">About</a></li>
+                <li><a class="hoverStyle" href="./index.html#host">Host</a></li>
+                <li><a class="hoverStyle" href="./sponsorship.html">Sponsorship</a></li>
+                <li>
+                    <a href="#"><button class="button">Register Now</button></a>
+                </li>
+            </ul>
+            <ul class="navbar">
+                <li>
+                    <a href="#"
+                        ><img class="logo" src="ieeeies.svg" alt="ieee logo"
+                    /></a>
+                </li>
+                <li class="hideOnMobile hoverStyle">
+                    <a href="./index.html#home">Home</a>
+                </li>
+                <li class="hideOnMobile hoverStyle">
+                    <a href="./index.html#events">Events</a>
+                </li>
+                <li class="hideOnMobile hoverStyle">
+                    <a href="./index.html#about">About</a>
+                </li>
+                <li class="hideOnMobile hoverStyle">
+                    <a href="./index.html#host">Host</a>
+                </li>
+                <li>
+                    <a class="hideOnMobile hoverStyle" href="./sponsorship.html">Sponsorship</a>
+                </li>
+                <li class="hideOnMobile">
+                    <a href="#"><button class="button">Register Now</button></a>
+                </li>
+                <li class="menu-button" onclick="showSidebar()">
+                    <a href="#"
+                        ><img
+                            src="menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                            alt="Icon"
+                            width="26"
+                            height="26"
+                    /></a>
+                </li>
+            </ul>
+        </nav>
+
+        <section class="background-color">
+            <div class="container">
+                <div class="sponsorship-content">
+                    <h1 class="sponsorship-main-heading">
+                        Sponsorship Opportunities
+                    </h1>
+                    <!-- <div class="orange-underline"></div> -->
+
+                    <h2 class="sponsorship-sub-heading">
+                        Become a Sponsor of NSRC 2025
+                    </h2>
+
+                    <p class="sponsorship-description">
+                        NSRC 2025 offers an exceptional opportunity for
+                        organizations to showcase their commitment to research,
+                        innovation, and the advancement of technology in
+                        electrical, electronics, and allied engineering fields.
+                        As a sponsor, your organization will gain visibility
+                        among a diverse audience of students, researchers,
+                        academicians, and industry professionals from across the
+                        country.
+                    </p>
+
+                    <p class="sponsorship-description">
+                        With a strong focus on interdisciplinary research,
+                        emerging technologies, and collaborative knowledge
+                        sharing, NSRC serves as a vibrant platform to engage
+                        with thought leaders and future innovators shaping
+                        India's technical landscape.
+                    </p>
+                </div>
+            </div>
+
+            <hr class="orange-hr" />
+            <footer>
+                <div class="container para">
+                    <div class="row text-center flex-wrap">
+                        <div class="col-6 col-md-3 mb-5">
+                            Chair<br />
+                            Ajay Suresh<br />
+                            981xxxxxx
+                        </div>
+                        <div class="col-6 col-md-3 mb-5">
+                            Vice Chair <br />
+                            Sreekandh<br />
+                            981xxxxxx
+                        </div>
+                        <div class="col-6 col-md-3">
+                            Mail ID<br />
+                            <div class="row">
+                                <p class="wrap">ieeesbnitc@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            Follow Us<br />
+                            <div class="row justify-content-center mt-1">
+                                <img
+                                    style="width: 2.9rem; height: 2.9rem"
+                                    src="facebook-svgrepo-com.svg"
+                                    class="col-2"
+                                    alt="Facebook"
+                                />
+                                <img
+                                    style="width: 3rem; height: 3rem"
+                                    src="instagram-svgrepo-com-cropped.svg"
+                                    class="col-2"
+                                    alt="Instagram"
+                                />
+                                <img
+                                    style="width: 3rem; height: 3rem"
+                                    src="linkedin-svgrepo-com-cropped.svg"
+                                    class="col-2"
+                                    alt="LinkedIn"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="orange-hr" />
+                <p class="text-center para">
+                    &copy; Copyright 2025 IEEE SB NITC
+                </p>
+            </footer>
+        </section>
+
+        <script>
+            function showSidebar() {
+                const sidebar = document.querySelector(".sidebar");
+                sidebar.style.display = "flex";
+            }
+
+            function hideSidebar() {
+                const sidebar = document.querySelector(".sidebar");
+                sidebar.style.display = "none";
+            }
+        </script>
+    </body>
+</html>
