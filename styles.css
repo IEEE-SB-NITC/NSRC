@@ -277,18 +277,18 @@ nav li:first-child {
     .logo-container {
         width: 98%;
         flex-direction: row;
-        justify-content: space-evenly;
-        gap: 6px;
-        padding: 0 2px;
+        justify-content: space-between;
+        gap: 8px;
+        padding: 0 5px;
     }
 
     .logo-container img {
         height: 22px;
-        max-width: 50px;
+        /* max-width: 65px; */
     }
 
     .ieee-banner {
-        padding: 10px 0;
+        padding: 20px 0;
         overflow-x: hidden;
     }
 
@@ -304,52 +304,56 @@ nav li:first-child {
     .ias,
     .pels,
     .ieee-main {
-        height: 20px;
-        max-width: 45px;
+        height: 32px;
+        max-width: 60px;
         margin: 2px;
     }
     .logo-container {
-        gap: 6px;
+        gap: 8px;
     }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
     .logo-container {
         flex-direction: row;
         justify-content: center;
-        gap: 20px;
+        gap: 25px;
     }
     .logo-container img {
-        height: 30px;
-        max-width: 70px;
+        height: 45px;
+        max-width: 85px;
+    }
+    .ieee-banner {
+        padding: 25px 0;
     }
 }
 
-/* Add smaller screen fix for very small devices */
 @media (max-width: 360px) {
     .logo-container {
-        gap: 4px;
+        gap: 6px;
         width: 100%;
         justify-content: space-around;
     }
     .logo-container img {
-        height: 18px;
-        max-width: 38px;
+        height: 28px;
+        max-width: 50px;
         margin: 1px;
     }
     .ieee-banner {
-        padding: 8px 0;
+        padding: 15px 0;
     }
 }
 
-/* Extra small devices */
 @media (max-width: 320px) {
     .logo-container {
-        gap: 2px;
+        gap: 4px;
     }
     .logo-container img {
-        height: 15px;
-        max-width: 32px;
+        height: 25px;
+        max-width: 42px;
         margin: 0;
+    }
+    .ieee-banner {
+        padding: 12px 0;
     }
 }
 @import url("https://fonts.googleapis.com/css2?family=Playwrite+HR+Lijeva+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
@@ -461,14 +465,14 @@ nav li:first-child {
     .timeline-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr); /* 2 columns */
-        gap: 20px;
+        gap: 40px 0px;
         justify-content: center;
         margin-left: auto;
         margin-right: auto;
     }
 
     .timeline-card {
-        width: 140.2px;
+        width: 170.2px;
         height: 70px;
         border-radius: 50px;
         padding: 0px;
@@ -658,7 +662,7 @@ nav li:first-child {
 
 .registrations-container-card-left {
     width: 70%;
-    padding: 25px ;
+    padding: 25px;
     padding-bottom: 5px;
     background: linear-gradient(180deg, #9fe7f5 0%, #012f43 100%);
     display: flex;
@@ -916,12 +920,27 @@ nav li:first-child {
         height: 172px;
     }
     .registrations-container-card-left {
-        padding: 36px 18px 45px 18px;
+        padding: 25px 15px 30px 15px;
+    }
+    .registrations-container-card-left-top-price {
+        font-size: 24px;
+    }
+    .registrations-container-card-left-top-price .old-price {
+        font-size: 14px;
+    }
+    .registrations-container-card-left-top-price .new-price {
+        font-size: 24px;
+    }
+    .registrations-container-card-left-top-subtitle {
+        font-size: 12px;
     }
     .registrations-container-card-left-button {
-        width: 148px;
-        height: 33px;
-        font-size: 17px;
+        width: 135px;
+        height: 30px;
+        font-size: 15px;
+    }
+    .early-bird-offer {
+        font-size: 12px;
     }
     .registrations-container-card-right-barcode {
         width: 72px;
@@ -940,18 +959,27 @@ nav li:first-child {
         height: 152px;
     }
     .registrations-container-card-left {
-        padding: 32px 16px 40px 16px;
+        padding: 22px 14px 25px 14px;
     }
     .registrations-container-card-left-top-price {
-        font-size: 27px;
+        font-size: 22px;
+    }
+    .registrations-container-card-left-top-price .old-price {
+        font-size: 13px;
+    }
+    .registrations-container-card-left-top-price .new-price {
+        font-size: 22px;
     }
     .registrations-container-card-left-top-subtitle {
-        font-size: 14px;
+        font-size: 11px;
     }
     .registrations-container-card-left-button {
-        width: 131px;
-        height: 29px;
-        font-size: 16px;
+        width: 120px;
+        height: 26px;
+        font-size: 14px;
+    }
+    .early-bird-offer {
+        font-size: 11px;
     }
     .registrations-container-card-right-barcode {
         width: 64px;
@@ -972,15 +1000,27 @@ nav li:first-child {
         height: 133px;
     }
     .registrations-container-card-left {
-        padding: 24px 14px 30px 14px;
+        padding: 18px 12px 20px 12px;
     }
     .registrations-container-card-left-top-price {
-        font-size: 24px;
+        font-size: 20px;
+    }
+    .registrations-container-card-left-top-price .old-price {
+        font-size: 12px;
+    }
+    .registrations-container-card-left-top-price .new-price {
+        font-size: 20px;
+    }
+    .registrations-container-card-left-top-subtitle {
+        font-size: 10px;
     }
     .registrations-container-card-left-button {
-        width: 115px;
-        height: 26px;
-        font-size: 15px;
+        width: 105px;
+        height: 24px;
+        font-size: 13px;
+    }
+    .early-bird-offer {
+        font-size: 10px;
     }
     .registrations-container-card-right-barcode {
         width: 56px;
@@ -1007,19 +1047,28 @@ nav li:first-child {
         min-height: 120px;
     }
     .registrations-container-card-left {
-        padding: 18px 10px 20px 10px;
+        padding: 15px 8px 18px 8px;
     }
     .registrations-container-card-left-top-price {
-        font-size: 20px;
+        font-size: 18px;
+    }
+    .registrations-container-card-left-top-price .old-price {
+        font-size: 11px;
+    }
+    .registrations-container-card-left-top-price .new-price {
+        font-size: 18px;
     }
     .registrations-container-card-left-top-subtitle {
-        font-size: 12px;
+        font-size: 9px;
     }
     .registrations-container-card-left-button {
-        width: 100px;
-        height: 24px;
-        font-size: 13px;
+        width: 90px;
+        height: 22px;
+        font-size: 12px;
         margin-top: 5px;
+    }
+    .early-bird-offer {
+        font-size: 9px;
     }
     .registrations-container-card-right {
         width: 25%;
@@ -1143,6 +1192,7 @@ nav li:first-child {
     .para {
         font-size: 10px;
         line-height: 16px;
+        font-weight: 300;
         padding: 0 1.4rem 0 1.4rem;
     }
     .bottom-hr {
