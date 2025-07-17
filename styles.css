@@ -1090,7 +1090,6 @@ nav li:first-child {
 }
 
 .main {
-    /* added class for main body */
     color: white;
     font-family: "Poppins", sans-serif;
 }
@@ -1110,6 +1109,7 @@ nav li:first-child {
     margin-left: 5%;
     margin-right: 5%;
 }
+
 .orange {
     color: var(--orange) !important;
 }
@@ -1201,6 +1201,7 @@ nav li:first-child {
     .footer-wrapper {
         flex-wrap: wrap;
     }
+
     .font-sizes-orange {
         font-size: 20px;
         font-weight: 300;
@@ -1418,4 +1419,10 @@ nav li:first-child {
     .about-description {
         font-size: 1.05rem;
     }
+
 }
+
+footer {
+    padding: 1rem;
+}
+
