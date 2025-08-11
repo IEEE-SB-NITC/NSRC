@@ -162,15 +162,24 @@ nav li:first-child {
     }
     .menu-button {
         display: block;
+        margin-right: 15px;
     }
 }
 @media (max-width: 425px) {
     .logo {
-        width: 98px;
-        height: 32.96942901611328px;
+        width: auto;
+        height: 45px;
         top: 90px;
-        left: 45px;
+        left: 35px;
         margin-top: 10px;
+    }
+    .menu-button {
+        margin-right: 20px;
+        padding-right: 10px;
+        margin-top: 10px;
+    }
+    nav ul {
+        padding-right: 10px;
     }
 }
 .hero-section {
@@ -227,11 +236,12 @@ nav li:first-child {
 }
 @media (max-width: 600px) {
     .hero-text h1 {
-        font-size: 20px;
+        font-size: 22px;
+        margin-bottom: 13px;
     }
     .hero-text h2 {
-        font-size: 14px;
-        margin-bottom: 17.5px;
+        font-size: 12px;
+        margin-bottom: 10px;
     }
     .date,
     .location {
@@ -267,7 +277,7 @@ nav li:first-child {
 }
 
 .logo-container img {
-    height: 65px;
+    height: 90px;
     max-width: 100%;
     object-fit: contain;
     /* filter: brightness(0) invert(1); */
@@ -283,7 +293,7 @@ nav li:first-child {
     }
 
     .logo-container img {
-        height: 22px;
+        height: 28px;
         /* max-width: 65px; */
     }
 
@@ -319,7 +329,7 @@ nav li:first-child {
         gap: 25px;
     }
     .logo-container img {
-        height: 45px;
+        height: 65px;
         max-width: 85px;
     }
     .ieee-banner {
@@ -1419,10 +1429,8 @@ nav li:first-child {
     .about-description {
         font-size: 1.05rem;
     }
-
 }
 
 footer {
     padding: 1rem;
 }
-
