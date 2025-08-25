@@ -811,9 +811,10 @@ nav li:first-child {
 }
 
 .registrations-container-card-right-barcode {
-    width: 95px;
-    height: 190px;
-    padding: 12px 24px 12px 12px;
+    width: 105px;
+    /* height: 190px; */
+    /* padding: 12px 24px 12px 12px; */
+
     border: 1px solid black;
 }
 
@@ -856,13 +857,15 @@ nav li:first-child {
         font-size: 18px;
     }
     .registrations-container-card-right-barcode {
-        width: 85px;
-        height: 170px;
-        padding: 10px 22px 10px 10px;
+        width: 95px;
+        /* height: 170px; */
+        /* padding: 10px 22px 10px 10px; */
     }
     .registrations-container-card-right::after {
         font-size: 15px;
         bottom: 152px;
+        transform: rotate(-90deg);
+        transform-origin: bottom right;
     }
 }
 
@@ -892,14 +895,16 @@ nav li:first-child {
         font-size: 17px;
     }
     .registrations-container-card-right-barcode {
-        width: 76px;
-        height: 155px;
-        padding: 9px 20px 9px 9px;
+        width: 86px;
+        /* height: 155px; */
+        /* padding: 9px 20px 9px 9px; */
     }
     .registrations-container-card-right::after {
         font-size: 14px;
         right: 12px;
         bottom: 140px;
+        transform: rotate(-90deg);
+        transform-origin: bottom right;
     }
 }
 
@@ -935,14 +940,16 @@ nav li:first-child {
         font-size: 18px;
     }
     .registrations-container-card-right-barcode {
-        width: 80px;
-        height: 160px;
-        padding: 10px 20px 10px 10px;
+        width: 85px;
+        /* height: 160px; */
+        /* padding: 10px 20px 10px 10px; */
     }
     .registrations-container-card-right::after {
         font-size: 14px;
         right: 12px;
         bottom: 142px;
+        transform: rotate(-90deg);
+        transform-origin: bottom right;
     }
 }
 
@@ -976,12 +983,16 @@ nav li:first-child {
         font-size: 12px;
     }
     .registrations-container-card-right-barcode {
-        width: 72px;
-        height: 144px;
-        padding: 9px 18px 9px 9px;
+        width: 80px;
+        /* height: 144px; */
+        /* padding: 9px 18px 9px 9px; */
     }
     .registrations-container-card-right::after {
-        bottom: 132px;
+        font-size: 12px;
+        right: 8px;
+        bottom: 115px;
+        transform: rotate(-90deg);
+        transform-origin: bottom right;
     }
 }
 
@@ -1015,14 +1026,16 @@ nav li:first-child {
         font-size: 11px;
     }
     .registrations-container-card-right-barcode {
-        width: 64px;
-        height: 128px;
-        padding: 8px 16px 8px 8px;
+        width: 74px;
+        /* height: 128px; */
+        /* padding: 8px 16px 8px 8px; */
     }
     .registrations-container-card-right::after {
-        font-size: 13px;
-        right: 10px;
-        bottom: 120px;
+        font-size: 11px;
+        right: 7px;
+        bottom: 105px;
+        transform: rotate(-90deg);
+        transform-origin: bottom right;
     }
 }
 
@@ -1056,15 +1069,17 @@ nav li:first-child {
         font-size: 10px;
     }
     .registrations-container-card-right-barcode {
-        width: 56px;
-        height: 112px;
-        padding: 7px 14px 7px 7px;
+        width: 58px;
+        /* height: 112px; */
+        /* padding: 7px 14px 7px 7px; */
         border: none;
     }
     .registrations-container-card-right::after {
-        font-size: 12px;
-        right: 9px;
-        bottom: 106px;
+        font-size: 8px;
+        /* right: 4px; */
+        bottom: 90px;
+        transform: rotate(-90deg);
+        transform-origin: bottom right;
     }
 }
 
@@ -1108,13 +1123,15 @@ nav li:first-child {
     }
     .registrations-container-card-right-barcode {
         width: 40px;
-        height: 80px;
-        padding: 5px 5px 5px 5px;
+        /* height: 80px; */
+        /* padding: 5px 5px 5px 5px; */
     }
     .registrations-container-card-right::after {
-        font-size: 10px;
-        right: 6px;
-        bottom: 80px;
+        font-size: 7px;
+        /* right: 2px; */
+        bottom: 90px;
+        transform: rotate(-90deg);
+        transform-origin: bottom right;
     }
 }
 :root {
