@@ -811,9 +811,10 @@ nav li:first-child {
 }
 
 .registrations-container-card-right-barcode {
-    width: 95px;
-    height: 190px;
-    padding: 12px 24px 12px 12px;
+    width: 105px;
+    /* height: 190px; */
+    /* padding: 12px 24px 12px 12px; */
+
     border: 1px solid black;
 }
 
