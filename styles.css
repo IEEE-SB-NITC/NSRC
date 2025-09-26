@@ -12,10 +12,59 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+    padding-top: 40px;
 }
 
+/* Announcement Bar Styles */
+.announcement-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #ff6b35 0%, #f7931e 100%);
+    color: white;
+    z-index: 1000;
+    overflow: hidden;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.announcement-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.scrolling-text {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll-left 30s linear infinite;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    padding-left: 100%;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.announcement-bar:hover .scrolling-text {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+/* Adjust body to account for fixed announcement bar */
+
 .target-section {
-    scroll-margin-top: 23vh;
+    scroll-margin-top: calc(23vh + 40px);
 }
 
 .background-color {
@@ -42,6 +91,7 @@ p {
 nav {
     position: absolute;
     width: 100%;
+    top: 40px;
 }
 nav ul {
     width: 100%;
@@ -207,6 +257,18 @@ nav li:first-child {
     }
     nav ul {
         padding-right: 10px;
+    }
+    .announcement-bar {
+        height: 35px;
+    }
+    .scrolling-text {
+        font-size: 12px;
+    }
+    body {
+        padding-top: 35px;
+    }
+    .target-section {
+        scroll-margin-top: calc(23vh + 35px);
     }
 }
 .hero-section {
